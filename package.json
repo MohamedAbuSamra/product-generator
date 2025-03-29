@@ -1,0 +1,29 @@
+{
+  "name": "daqayeq-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon server",
+    "production": "NODE_ENV=production nodemon server",
+    "migrate": "sequelize-cli db:migrate --env development",
+    "migrate:production": "sequelize-cli db:migrate --env production",
+    "create:migration": "sequelize-cli migration:create --name ",
+    "run": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "lumie": "^0.1.2",
+    "openai": "^3.2.1",
+    "pg": "^8.11.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

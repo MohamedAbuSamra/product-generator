@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "helper/product-generator/input",
+    "helper/product-generator/output"
+  ]
+}
