@@ -49,9 +49,6 @@ function findProductByName(productName, id) {
 module.exports.getProduct = async (req, res) => {
   const { productName, id } = req.query;
 
-  console.log(CONSTANTS.PORT);
-  console.log(CONSTANTS.APP_NAME);
-
   if (!productName && !id) {
     return res
       .status(400)
